@@ -1,0 +1,19 @@
+# Path to your Oh My Zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+
+# Oh My Zsh plugins
+plugins=(git
+    aliases
+    archlinux
+    debian
+    docker
+    docker-compose
+    rails
+    ruby
+    copybuffer
+)
+
+# Starts Oh My Zsh
+source $ZSH/oh-my-zsh.sh
+# Spaceship prompt
+source "$HOME/.zsh/spaceship/spaceship.zsh"
