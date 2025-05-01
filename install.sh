@@ -8,12 +8,11 @@ if [ -z "$ZSH" ]; then
 fi
 # Installs the zsh syntax highlighting plugin
 if [ ! -d "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting" ]; then
-    git clone --depth 1 https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting
+    git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting"
 fi
-# Installs Spaceship
-if [ ! -d "$HOME/.zsh/spaceship" ]; then
-    mkdir -p "$HOME/.zsh"
-    git clone --depth=1 https://github.com/spaceship-prompt/spaceship-prompt.git "$HOME/.zsh/spaceship"
+# Installs Powerlevel10k zsh theme
+if [ ! -d "$ZSH_CUSTOM/themes/powerlevel10k" ]; then
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "$ZSH_CUSTOM/themes/powerlevel10k"
 fi
 
 link_all_files "home" "$HOME" "." # "." adds a dot to the beginning of every file in ./home
