@@ -22,7 +22,7 @@ Examples:
     program=$(find $HOME/.local/share/man/markdown -type f -printf "%f\n" | sed -E 's|(.*)\.md$|\1|' | fzf)
     local mlp=$HOME/.local/share/man
     local md_file=$mlp/markdown/$program.md
-    nvim $md_file
+    $EDITOR $md_file
     kramdown --output man $md_file > $mlp/mangnfb/$program.gnfb
     return
   fi
@@ -33,7 +33,7 @@ Examples:
     local md_file=$mlp/markdown/$2.md
 
     [[ -f $md_file ]] || sed "s|%name|$2|g" "$mlp/template.md" > $md_file
-    nvim $md_file
+    $EDITOR $md_file
     kramdown --output man $md_file > $mlp/mangnfb/$2.gnfb
     return
   fi
