@@ -1,0 +1,13 @@
+/*** Themes ***/
+@import url(cleaner_extensions_menu.css); /* Cleans up the addons menu */
+
+/* Removes interactionless (greyed out) addons from the addons menu */
+toolbarbutton[class="unified-extensions-item-action-button subviewbutton"]{ display:none !important; }
+
+/*** Removes: ***/
+.tab-close-button,  /*The "x" from the tabs (I prefer using middle click for this purpose) */
+#context-sendimage, /* Email Image... */
+#context-sep-setbackground, #context-setDesktopBackground, /* Set Image as Desktop Background...*/
+#context-inspect-a11y /* Inspect Accessibility Properties */
+{ display: none !important; }
+

@@ -27,3 +27,15 @@ link_dir "man" "$HOME/.local/share/man"
 link_all_files "kitty" "$HOME/.config/kitty"
 
 link_all_files "systemd" "$HOME/.config/systemd/user"
+
+# Installs firefox config files, only if it is installed
+if [ -d "$HOME/.mozilla/firefox" ]; then
+    # Gets default-release profile directory
+    profile=$(awk '/^Path=.*default-release$/' $HOME/.mozilla/firefox/profiles.ini | sed 's|Path=\(.*default-release\)|\1|')
+    profile="$HOME/.mozilla/firefox/$profile"
+fi
+if [ -n "$profile" ]; then
+    link_all_files "firefox" "$profile"
+    link_all_dirs "firefox" "$profile"
+fi
+
