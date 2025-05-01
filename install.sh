@@ -20,6 +20,8 @@ link_all_files "home" "$HOME" "." # "." adds a dot to the beginning of every fil
 link_all_files "oh-my-zsh" "$ZSH_CUSTOM"
 link_all_dirs "oh-my-zsh-plugins" "$ZSH_CUSTOM/plugins"
 
+link_dir "nvim" "$HOME/.config/nvim"
+
 link_dir "man" "$HOME/.local/share/man"
 
 link_all_files "kitty" "$HOME/.config/kitty"
