@@ -26,8 +26,8 @@ command_cli | awk \[u2018]\fIevent\fP {\fIcommand\fP}\[u2019]
 \fBNR\fP is the current line number being analyzed by awk\.
 .SH "EXAMPLES"
 .TP
-\fBls \-l | awk \'($3 == "guilherme")\fP
-Prints only the lines where the user is named guilherme, for the command ls \-l:
+\fBls \-l | awk \'($3 == "guilherme")\'\fP
+Prints only the lines where the user is named guilherme, for the command ls \-l
 .TP
 \fBawk \-F";" \'{print $2, $NF}\' filename\.csv | head \-n 10\fP
 Prints the second and last columns of a semicolon\-separated CSV file\. Only the first 10 lines:

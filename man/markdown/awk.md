@@ -25,8 +25,8 @@ matches), or `!/pattern/` (executes if it does not match).
 
 ## EXAMPLES
 
-`ls -l | awk '($3 == "guilherme")`
-: Prints only the lines where the user is named guilherme, for the command ls -l:
+`ls -l | awk '($3 == "guilherme")'`
+: Prints only the lines where the user is named guilherme, for the command ls -l
 
 `awk -F";" '{print $2, $NF}' filename.csv | head -n 10`
 : Prints the second and last columns of a semicolon-separated CSV file. Only the first 10 lines:
