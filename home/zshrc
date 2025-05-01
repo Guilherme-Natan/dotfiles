@@ -2,7 +2,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # Oh My Zsh plugins
-plugins=(git
+default=(git
     aliases
     archlinux
     debian
@@ -11,8 +11,14 @@ plugins=(git
     rails
     ruby
     copybuffer
-    mg
 )
+custom=(mg
+)
+final=(zsh-syntax-highlighting # Plugins that need to be at the very end of the array
+)
+
+plugins=("${default[@]}" "${custom[@]}"  "${final[@]}")
+
 
 # Starts Oh My Zsh
 source $ZSH/oh-my-zsh.sh
