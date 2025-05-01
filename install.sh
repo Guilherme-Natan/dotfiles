@@ -21,3 +21,5 @@ link_all_files "oh-my-zsh" "$ZSH_CUSTOM"
 link_all_dirs "oh-my-zsh-plugins" "$ZSH_CUSTOM/plugins"
 
 link_dir "man" "$HOME/.local/share/man"
+
+link_all_files "kitty" "$HOME/.config/kitty"
