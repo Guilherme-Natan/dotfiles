@@ -11,6 +11,7 @@ plugins=(git
     rails
     ruby
     copybuffer
+    mg
 )
 
 # Starts Oh My Zsh
