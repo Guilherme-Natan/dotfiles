@@ -1,0 +1,6 @@
+[Unit]
+Description=Update the desktop background based on the time of day, and activities
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c "plasma-apply-wallpaperimage $WALLPAPERS/$(ls $WALLPAPERS | shuf -n 1)"

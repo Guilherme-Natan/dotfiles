@@ -5,6 +5,7 @@ Here are my dotfiles. Feel free to take anything you want from here.
 ## My Favorite Features
 
 - `mg`, a custom zsh plugin that creates and reads custom man files. For more info, install it manually and run `mg -h`.
+- A wallpaper roulette for KDE, using a simples systemd timer.
 
 ## Requirements
 
@@ -25,6 +26,10 @@ Then, create `~/.extra`, a file where you will put variables spefically to your 
 
 - `scripts`, the absolute path to the directory you want to store scripts (example: `scripts=~/Scripts`). They will be
   avaible in your PATH.
+- `WALLPAPERS`, the absolute path to the directory you want to store your wallpapers (example: `export
+  WALLPAPERS=~/Wallpapers`). 
+    - Do keep in mind that the wallpaper roulette is made specificaly for KDE, in a distro using the Systemd init
+      system.
 
 ## TODO
 

@@ -1,0 +1,9 @@
+[Unit]
+Description=Periodically update the desktop background
+
+[Timer]
+OnCalendar=*-*-* *:0/15:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -23,3 +23,5 @@ link_all_dirs "oh-my-zsh-plugins" "$ZSH_CUSTOM/plugins"
 link_dir "man" "$HOME/.local/share/man"
 
 link_all_files "kitty" "$HOME/.config/kitty"
+
+link_all_files "systemd" "$HOME/.config/systemd/user"
