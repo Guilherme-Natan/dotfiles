@@ -2,9 +2,15 @@
 source functions.sh
 
 ZSH_CUSTOM=$HOME/.oh-my-zsh/custom
+
+# Sets zsh as the default shell
+chsh -s $(which zsh)
+
 # Installs Oh My Zsh
 if [ -z "$ZSH" ]; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    mv ~/.zshrc ~/zshrc.old
+    mv ~/.zprofile ~/zprofile.old
 fi
 # Installs the zsh syntax highlighting plugin
 if [ ! -d "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting" ]; then
