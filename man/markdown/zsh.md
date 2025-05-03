@@ -1,7 +1,7 @@
 # zsh -- Tips for the ZSH
 {:data-section="gnfb"}
 
-## OPTIONS
+## EXAMPLES
 
 `for i in $( echo *.pdf ) ; do {pdftk "$i" dump_data | grep -i numberofpages} ; done`
 : Do something for each (non hidden) file in the current directory. Extremely useful for commands that do not support
