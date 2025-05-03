@@ -1,0 +1,7 @@
+[user]
+	name = Guilherme Natan
+	email = guilherme.natan.braga@gmail.com
+[color]
+	ui = auto
+[init]
+	defaultBranch = main
