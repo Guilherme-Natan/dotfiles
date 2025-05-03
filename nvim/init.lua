@@ -1,5 +1,6 @@
 require "keybindings"
 require "opts"
+require "autocommands"
 
 if vim.g.vscode then
     require "vscode_specifics"
