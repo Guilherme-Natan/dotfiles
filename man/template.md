@@ -1,7 +1,7 @@
 # %name --
 {:data-section="gnfb"}
 
-## OPTIONS
+## EXAMPLES
 
 `-`
 : 
