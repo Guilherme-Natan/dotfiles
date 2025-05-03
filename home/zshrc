@@ -14,6 +14,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Oh My Zsh plugins
 default=(git
     aliases
+    alias-finder
     archlinux
     debian
     docker
