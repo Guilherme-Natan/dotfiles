@@ -9,8 +9,8 @@ Here are my dotfiles. Feel free to take anything you want from here.
 
 ## Requirements
 
+- Zsh (run `chsh -s $(which zsh)` to set it as the default shell)
 - Ruby-kramdown and fzf, for the `mg` plugin
-- Zsh
 - A [Nerd Font](https://www.nerdfonts.com/font-downloads) (such as Hack Nerd Font)
 
 ## Installing
