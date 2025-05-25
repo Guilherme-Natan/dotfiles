@@ -33,8 +33,9 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
 fi
 
 # Remove Dead Keys preview
-export GTK_IM_MODULE=xim
-export QT_IM_MODULE=xim
+export GTK_IM_MODULE=uim
+export QT_IM_MODULE=uim
+uim-xim & export XMODIFIERS=@im=uim
 
 # Source .zshrc
 if [[ -f ~/.zshrc ]]; then source ~/.zshrc; fi
