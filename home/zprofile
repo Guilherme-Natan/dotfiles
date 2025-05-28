@@ -15,6 +15,13 @@ export PATH="$PATH:$scripts"
 # Modifies the default editor based on which one is installed
 export EDITOR=$(command -v nvim || command -v vim || command -v vi)
 
+# Adds every manpath that comes by default to man
+export MANPATH=$(manpath)
+# Adds a personal man path, if it isn't already present
+if [[ "$MANPATH" != *":$HOME/.local/share/man:"* ]]; then
+    export MANPATH="$MANPATH:$HOME/.local/share/man"
+fi
+
 # Adds every section that comes by default to man
 export MANSECT="0:1:n:l:8:3:2:5:4:9:6:7:1x:3x:4x:5x:6x:8x:1bind:3bind:5bind:7bind:8bind:1cn:8cn:1m:1mh:5mh:8mh:1netpbm:3netpbm:5netpbm:0p:1p:3p:3posix:1pgsql:3pgsql:5pgsql:3C++:8C++:3blt:3curses:3ncurses:3form:3menu:3db:3gdbm:3f:3gk:3paper:3mm:5mm:3perl:3pm:3pq:3qt:3pub:3readline:1ssl:3ssl:5ssl:7ssl:3t:3tk:3tcl:3tclx:3tix:7l:7nr:8c:Cg:g:s:m"
 # Creates a personal section
