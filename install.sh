@@ -20,6 +20,9 @@ fi
 
 link_all_files "home" "$HOME" "." # "." adds a dot to the beginning of every file in ./home
 
+mkdir -p "$HOME/.config"
+mkdir -p "$HOME/.local/share"
+
 link_all_files "oh-my-zsh" "$ZSH_CUSTOM"
 link_all_dirs "oh-my-zsh-plugins" "$ZSH_CUSTOM/plugins"
 
