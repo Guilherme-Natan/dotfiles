@@ -14,5 +14,5 @@ keymap({"n", "x"},  "<A-l>", "<C-w>l", { noremap = true })
 keymap({"n", "x"},  "<A-v>", "<C-w>v", { noremap = true })
 keymap({"n", "x"},  "<A-s>", "<C-w>s", { noremap = true })
 
-keymap("n", "<C-d>", "<C-d>zz", { noremap=true, desc = "Center cursor after moving down half-page"})
-keymap("n", "<C-u>", "<C-u>zz", { noremap=true, desc = "Center cursor after moving up half-page"})
+-- keymap("n", "<C-d>", "<C-d>zz", { noremap=true, desc = "Center cursor after moving down half-page"})
+-- keymap("n", "<C-u>", "<C-u>zz", { noremap=true, desc = "Center cursor after moving up half-page"})
