@@ -12,7 +12,7 @@ user_pref("accessibility.typeaheadfind.enablesound", false); //Removes the alarm
 user_pref("browser.urlbar.update2.engineAliasRefresh", true); //Enables custom search engines
 user_pref("browser.tabs.closeWindowWithLastTab", false); //Firefox doesn't closes if you close the last tab
 user_pref("browser.ctrlTab.sortByRecentlyUsed", true); // Ctrl tab swaps between the last two used tabs
-user_pref("browser.tabs.insertRelatedAfterCurrent", false); // Tabs always open to the right, in the last spot
+user_pref("browser.tabs.insertRelatedAfterCurrent", true); // Tabs always open to the right of the current tab
 
 /* Enables the browser toobox */
 user_pref("devtools.chrome.enabled", true);
