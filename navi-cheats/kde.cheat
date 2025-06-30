@@ -1,0 +1,4 @@
+% kde, power, sleep, disable, inhibit
+
+# Inhibit (disable) sleep for a certain ammount of time (KDE)
+kde-inhibit --power sleep <time>

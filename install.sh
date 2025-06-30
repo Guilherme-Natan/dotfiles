@@ -34,6 +34,8 @@ link_all_files "kitty" "$HOME/.config/kitty"
 
 link_all_files "systemd" "$HOME/.config/systemd/user"
 
+link_dir "navi-cheats" "$HOME/.local/share/navi/cheats/gnfb"
+
 # Installs firefox config files, only if it is installed
 if [ -d "$HOME/.mozilla/firefox" ]; then
     # Gets default-release profile directory
