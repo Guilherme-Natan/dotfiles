@@ -4,8 +4,8 @@ export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_STATE_HOME=$HOME/.local/state
 
-# Source extra (private) configs
-if [[ -f ~/.extra ]]; then source ~/.extra; fi
+# Source environment (private) configs
+if [[ -f ~/.env ]]; then source ~/.env; fi
 
 # Adds pipx programs to PATH
 export PATH="$PATH:$HOME/.local/bin"

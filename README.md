@@ -27,7 +27,7 @@ cd dotfiles
 > respectively. It will only do this if you haven't installed Oh My Zsh yet.
 
 
-Then, create `~/.extra`, a file where you will put variables spefically to your machine, such as:
+Then, create `~/.env`, a file where you will put variables spefically to your machine, such as:
 
 - `scripts`, the absolute path to the directory you want to store scripts (example: `scripts=~/Scripts`). They will be
   avaible in your PATH.
