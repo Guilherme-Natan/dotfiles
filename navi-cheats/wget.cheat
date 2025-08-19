@@ -1,0 +1,4 @@
+% download, website, entire, entirety
+
+# Downloads an entire website, including all subpages
+wget -mpEk <website>
