@@ -775,3 +775,7 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <Multi_key> <Right> <minus>          : "⇢"  # →-
 <Multi_key> <Up> <minus>             : "⇡"  # ↑-
 <Multi_key> <Down> <minus>           : "⇣"  # ↓-
+
+## Math symbols
+
+<Multi_key> <less> <o> : "∠" U2220
