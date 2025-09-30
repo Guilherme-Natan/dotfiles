@@ -1,0 +1,4 @@
+set guioptions none
+
+map <C-n> feedkeys ":exec zathura $FILE<Return>"
+map <C-m> toggle_statusbar

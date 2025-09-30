@@ -28,13 +28,15 @@ link_all_dirs "oh-my-zsh-plugins" "$ZSH_CUSTOM/plugins"
 
 link_dir "nvim" "$HOME/.config/nvim"
 
-link_dir "man" "$HOME/.local/share/man"
-
 link_all_files "kitty" "$HOME/.config/kitty"
 
 link_all_files "systemd" "$HOME/.config/systemd/user"
 
+link_dir "zathura" "$HOME/.config/zathura"
+
 link_dir "navi-cheats" "$HOME/.local/share/navi/cheats/gnfb"
+
+link_dir "man" "$HOME/.local/share/man"
 
 # Installs firefox config files, only if it is installed
 if [ -d "$HOME/.mozilla/firefox" ]; then
