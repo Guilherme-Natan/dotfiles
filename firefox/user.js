@@ -21,3 +21,6 @@ user_pref("devtools.debugger.remote-enabled", true);
 /* Disables pocker */
 user_pref("extensions.pocket.enabled", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
+
+/* Changes language to pt-br (changes apply mostly to the locale) */
+user_pref("intl.locale.requested", "pt-BR");
