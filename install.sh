@@ -34,6 +34,8 @@ link_all_files "systemd" "$HOME/.config/systemd/user"
 
 link_dir "zathura" "$HOME/.config/zathura"
 
+link_dir "tmux" "$HOME/.config/tmux"
+
 link_dir "navi-cheats" "$HOME/.local/share/navi/cheats/gnfb"
 
 link_dir "man" "$HOME/.local/share/man"
