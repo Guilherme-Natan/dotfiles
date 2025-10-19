@@ -32,6 +32,7 @@ link_dir() {
 
   [[ -d "$src" ]] || return  # Skip if not a directory
   [[ -d "$dest" ]] && return # Skip if destiny alreary exists
+  mkdir -p $(dirname "$2")
   ln -s "$src" "$dest" 2> /dev/null || return 
   echo "Symink $1 created"
 }
