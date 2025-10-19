@@ -1,0 +1,8 @@
+% qr, code, generate, create, print, termianl
+
+# Prints a qrcode for a given string to the terminal
+echo <string> | qrencode -t ANSI
+
+% qr, code, read, iamge
+# Reads a qr code from an image
+zbarimg <image>
