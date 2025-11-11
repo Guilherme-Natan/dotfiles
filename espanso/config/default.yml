@@ -1,3 +1,6 @@
 keyboard_layout:
   layout: "us"
   variant: "intl"
+
+toggle_key: OFF
+search_shortcut: off
