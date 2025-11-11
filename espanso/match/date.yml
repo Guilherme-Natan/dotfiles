@@ -1,0 +1,18 @@
+matches:
+  - trigger: ":iso"
+    replace: "{{isodate}}"
+    vars:
+      - name: isodate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%d/%m/%Y"
+
+

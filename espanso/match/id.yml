@@ -1,0 +1,8 @@
+matches:
+  - trigger: ":email"
+    replace: "guilherme.natan.braga@gmail.com"
+
+  - trigger: ":name"
+    replace: "Guilherme Natan Ferro Braga"
+
+

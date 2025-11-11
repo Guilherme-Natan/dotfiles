@@ -26,6 +26,9 @@ mkdir -p "$HOME/.local/share"
 link_all_files "oh-my-zsh" "$ZSH_CUSTOM"
 link_all_dirs "oh-my-zsh-plugins" "$ZSH_CUSTOM/plugins"
 
+link_all_files "espanso/config" "$HOME/.config/espanso/config"
+link_all_files "espanso/match" "$HOME/.config/espanso/match"
+
 link_dir "nvim" "$HOME/.config/nvim"
 
 link_all_files "kitty" "$HOME/.config/kitty"
