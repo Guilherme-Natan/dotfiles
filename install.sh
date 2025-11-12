@@ -54,3 +54,5 @@ if [ -n "$profile" ]; then
     link_all_dirs "firefox" "$profile"
 fi
 
+# Creates the .env file
+cp -n env.example ~/.env
