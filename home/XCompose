@@ -778,4 +778,8 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 
 ## Math symbols
 
-<Multi_key> <less> <o> : "∠" U2220
+<Multi_key> <less> <o> : "∠"
+
+## Miscellaneous
+
+<Multi_key> <a> <a> : "ª"
