@@ -35,6 +35,8 @@ link_all_files "kitty" "$HOME/.config/kitty"
 
 link_all_files "systemd" "$HOME/.config/systemd/user"
 
+link_all_files "lazygit" "$HOME/.config/lazygit"
+
 link_dir "zathura" "$HOME/.config/zathura"
 
 link_dir "tmux" "$HOME/.config/tmux"
