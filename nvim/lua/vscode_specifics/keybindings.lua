@@ -15,7 +15,9 @@ keymap('n', '<Leader>b', function() vscode.call('editor.debug.action.toggleBreak
 keymap('n', '<Leader>lp', function() vscode.call('editor.debug.action.addLogPoint') end)
 
 -- Inserts a snippet
-keymap("n", "<Leader>s", function() vscode.call('editor.action.insertSnippet') end)
+keymap("n", "<Leader>sp", function() vscode.call('editor.action.insertSnippet') end)
+-- Surround with tag
+keymap({"n", "x"}, "<Leader>ys", function() vscode.call('editor.emmet.action.wrapWithAbbreviation') end)
 
 -- Searches keyword under cursor in zeal (requires vscode-dash extension)
 keymap('n', '<Leader>ze', function() vscode.call('extension.dash.specific') end)
