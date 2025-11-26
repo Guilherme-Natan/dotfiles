@@ -567,6 +567,13 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <dead_tilde> <question> : "~?"
 <dead_tilde> <questiondown> : "~¿"
 
+# IBUS FIX
+<dead_acute> <space> : "'"
+<dead_grave> <space> : "`"
+<dead_diaeresis> <space> : "\""
+<dead_tilde> <space> : "~"
+<dead_circumflex> <space> : "^"
+
 # COMPOSE KEY
 ## Greek letters (taken from https://askubuntu.com/questions/787113/compose-dead-greek-with-compose-key)
 
