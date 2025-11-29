@@ -1,11 +1,9 @@
-require "keybindings"
-require "opts"
-require "autocommands"
-
+-- Load my configs
+vim.cmd.runtime { "lua/config/**/*.lua" , bang = true }
 if vim.g.vscode then
-    require "vscode_specifics"
+  vim.cmd.runtime { "lua/vscode_specifics/**/*.lua" , bang = true }
 else
-    require "neovim_specifics"
+  vim.cmd.runtime { "lua/neovim_specifics/**/*.lua" , bang = true }
 end
 
 -- Starts lazy.nvim
